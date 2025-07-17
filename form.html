@@ -10,12 +10,34 @@
             text-align: center;
         }
         label{
-            font-weight: 400;
+            font-weight: bold;
+            color: rgb(77, 109, 12);
+        }
+        div{
+            background-color: antiquewhite;
+            width: 500px;
+            margin: auto 450px;
+            border-radius: 5px;
+            box-shadow: 5px 5px 20px gray;
+        }
+        input, textarea, select, button{
+            border: none;
+            border-radius: 5px;
+        }
+        button{
+            height: 30px;
+            font-weight: bold;
+            background-color: #7fffd4;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: rgb(91, 156, 134);            
         }
     </style>
 </head>
 <body>
     <h1>Task Form</h1>
+    <div>
     <label>Title</label><br>
     <input type="text"><br><br>
     <label>Description</label><br>
@@ -37,6 +59,7 @@
         <option>Pending</option>
     </select><br><br>
     <button type="submit">Submit</button><br><br>
+    </div>
     <a href="tasks.html">View Tasks</a>
 </body>
 </html>
